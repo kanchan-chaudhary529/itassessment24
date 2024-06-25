@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width:35%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:sticky;
+    top:0;
+    cursor:pointer;
+}
+.nav-list{
+    width: 70%;
+    display : flex;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(110, 185, 238);
+
+}
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding:0 23px;
+}
+#search{
+    padding:5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url(builing.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height:100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    max-width:50%;
+    margin:auto;
+    height:80%;
+}
+.firsthalf{
+    width: 75%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.secondhalf img{
+    height: 10vh;
+    width:  10vh;
+    border: 3px solid black;
+    border-radius: 200px;
+    display: block;
+    margin: right;
+
+}
+.text-big{
+    font-size: 30px;
+}
+.text-small{
+    font-size:18px;
+}
+.btn{
+    padding:8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    
+
+}
+.btn:hover{
+    background-color:rgb(11, 11, 11);
+}
+.btn-sm{
+    padding:6px 10px;
+    vertical-align:middle;
+    
+}
+.btn-dark{
+    color: rgb(15, 1, 1);
+    border: 2px solid rgb(11, 11, 11);
+}
+
+.btn-dark:hover{
+    background-color: aliceblue;
+}
+.section{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px;
+
+}
+.sectionleft{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;
+}
+.sectionTag{
+    padding:16px 0;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:0px;
+
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.contact{
+    background-color: lightblue;
+    height: 833px; 
+}
+.text-center{
+    padding-top: 20px;
+    text-align: center;
+    padding: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 35px;
+    
+
+}
+.form{
+    max-width:1200px;
+    margin: 30px auto;
+}
+.form-input{
+    margin:14px 0;
+    padding: 5px 3px;
+    width:100%;
+    font-size:19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family:"Ubuntu", sans-serif;
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+@media only screen and(max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction:column;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.about{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0 60px;
+    display:flex;
+}
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+.title h1::after{
+    content:"";
+    height:4px;
+    width:230px;
+    background-color: rgb(29, 30, 30);
+    display: block;
+    margin: auto
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 74px auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color:lightblue;
+    border: solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+.card .icon{
+    font-size:35px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+.card h2{
+    font-size: 28px;
+    color: red;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height:1.5;
+    color: rgb(17, 17, 17);
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(18, 17, 17);
+    padding: 8px 12px;
+    border-right: 5px;
+    letter-spacing: 1px;
+    background-color:white;
+    font-family: "Ubuntu", sans-serif;
+}
+.button:hover{
+    background-color:white;
+    transition: 0.4s ease;
+}
+@media screen and (max-width:940){
+    .services{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+.contact{
+    position:relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background: url(building6.jpg);
+    background-size: cover;
+    opacity: 100%;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+   font-size: 36px; 
+   font-weight: 500;
+   color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding:20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#fff;
+    font-weight: 300;
+    flex-direction: column;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #168bc2;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom:2px solid #333 ;
+    outline: none;
+
+}
+.contactform .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666
+}
+
+.contactform .inputbox input:valid~ span,
+.contactform .inputbox input:focus ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+}
+.contactform .inputbox input[type="submit"]{
+    width:100px;
+    background: #00bcd4;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}
+body{
+    background-color: lightblue;
+
+.heading{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: auto;
+    background-color: green;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+.container{
+    width:90% ;
+    margin: auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image img:hover img{
+    transform:scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    flex-direction: column-reverse;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding:10px 20px;
+    background-color: #3e8e41;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3 ease;
+}
+.about-content .read:hover{
+    background-color: #3e8e41;
+}
+}
