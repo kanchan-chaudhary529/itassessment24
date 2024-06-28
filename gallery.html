@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <center>
+    <h1 style="font-size: 50px; padding-top: 30px;"><i><b>Image Gallery </b></i></h1><hr>
+    </center>
+    <div class ="full-img" id="fullimgbox">
+        <img src="office2.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="img-gallery" onclick="openfullimg(this.src)">
+        <img src="office2.jpg" onclick="openfullimg(this.src)">
+        <img src="coffee.jpg" onclick="openfullimg(this.src)">
+        <img src="classroom.jpg" onclick="openfullimg(this.src)">
+        <img src="canteen.jpg" onclick="openfullimg(this.src)">
+        <img src="park.jpeg" onclick="openfullimg(this.src)">
+        <img src="parking.jpg" onclick="openfullimg(this.src)">
+        <img src="football.jpg" onclick="openfullimg(this.src)">
+        <img src="book.jpg" onclick="openfullimg(this.src)">
+    
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimgbox");
+
+        function openfullimg(pic){
+             fullimgbox.style.display="flex";
+             fullimg.src= pic;
+        }
+
+        function closefullimg(){
+            fullimgbox.style.display="none";  
+        }
+
+    </script>
+    
+</body>
+</html>
